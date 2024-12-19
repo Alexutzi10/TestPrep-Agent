@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">TestPrep-Agent</string>
+    <string name="payment">Payment</string>
+    <string name="payment_value">Payment</string>
+    <string name="sterge">Sterge</string>
+    <string-array name="spinner_values">
+        <item>are valoarea egala cu</item>
+        <item>are valoarea mai mare decat</item>
+        <item>are valoarea mai mica decat</item>
+    </string-array>
 </resources>
