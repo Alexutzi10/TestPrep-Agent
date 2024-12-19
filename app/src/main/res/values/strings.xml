@@ -3,6 +3,9 @@
     <string name="payment">Payment</string>
     <string name="payment_value">Payment</string>
     <string name="sterge">Sterge</string>
+    <string name="introdu_o_valoare">Introdu o valoare!</string>
+    <string name="deleted">Deleted</string>
+    <string name="inserted">Inserted!</string>
     <string-array name="spinner_values">
         <item>are valoarea egala cu</item>
         <item>are valoarea mai mare decat</item>
