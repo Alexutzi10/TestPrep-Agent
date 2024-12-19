@@ -8,12 +8,58 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/surugiu_george_alexandru_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/payment"
+        app:layout_constraintTop_toTopOf="@id/surugiu_george_alexandru_spinner"
+        app:layout_constraintStart_toEndOf="@id/surugiu_george_alexandru_spinner"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="4dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/surugiu_george_alexandru_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/baseline_sync_24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"/>
+
+    <Spinner
+        android:id="@+id/surugiu_george_alexandru_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/surugiu_george_alexandru_fab"
+        android:minHeight="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:entries="@array/spinner_values"/>
+
+    <EditText
+        android:id="@+id/surugiu_george_alexandru_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/payment_value"
+        app:layout_constraintStart_toEndOf="@id/surugiu_george_alexandru_tv"
+        app:layout_constraintTop_toTopOf="@id/surugiu_george_alexandru_spinner"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"/>
+
+    <Button
+        android:id="@+id/surugiu_george_alexandru_bttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sterge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/surugiu_george_alexandru_spinner"
+        android:layout_marginTop="8dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
